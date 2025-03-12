@@ -27,14 +27,6 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a 
-                  href="#benefits" 
-                  className="text-gray-600 hover:text-ea-blue transition-colors"
-                >
-                  ¿Por Qué Elegirnos?
-                </a>
-              </li>
-              <li>
-                <a 
                   href="#solutions" 
                   className="text-gray-600 hover:text-ea-blue transition-colors"
                 >
@@ -46,7 +38,15 @@ const Footer = () => {
                   href="#examples" 
                   className="text-gray-600 hover:text-ea-blue transition-colors"
                 >
-                  Casos de Éxito
+                  Algunos Ejemplos
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#about" 
+                  className="text-gray-600 hover:text-ea-blue transition-colors"
+                >
+                  Nosotros
                 </a>
               </li>
               <li>

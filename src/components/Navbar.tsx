@@ -47,13 +47,6 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <a 
-              href="#benefits" 
-              onClick={(e) => { e.preventDefault(); scrollToSection("benefits"); }}
-              className="text-gray-700 hover:text-ea-blue transition-colors"
-            >
-              ¿Por Qué Elegirnos?
-            </a>
-            <a 
               href="#solutions" 
               onClick={(e) => { e.preventDefault(); scrollToSection("solutions"); }}
               className="text-gray-700 hover:text-ea-blue transition-colors"
@@ -65,7 +58,14 @@ const Navbar = () => {
               onClick={(e) => { e.preventDefault(); scrollToSection("examples"); }}
               className="text-gray-700 hover:text-ea-blue transition-colors"
             >
-              Casos de Éxito
+              Algunos Ejemplos
+            </a>
+            <a 
+              href="#about" 
+              onClick={(e) => { e.preventDefault(); scrollToSection("about"); }}
+              className="text-gray-700 hover:text-ea-blue transition-colors"
+            >
+              Nosotros
             </a>
             <a 
               href="#contact" 
@@ -96,13 +96,6 @@ const Navbar = () => {
       >
         <nav className="flex flex-col space-y-6 p-6">
           <a 
-            href="#benefits" 
-            onClick={(e) => { e.preventDefault(); scrollToSection("benefits"); }}
-            className="text-gray-700 hover:text-ea-blue transition-colors text-xl py-2"
-          >
-            ¿Por Qué Elegirnos?
-          </a>
-          <a 
             href="#solutions" 
             onClick={(e) => { e.preventDefault(); scrollToSection("solutions"); }}
             className="text-gray-700 hover:text-ea-blue transition-colors text-xl py-2"
@@ -114,7 +107,14 @@ const Navbar = () => {
             onClick={(e) => { e.preventDefault(); scrollToSection("examples"); }}
             className="text-gray-700 hover:text-ea-blue transition-colors text-xl py-2"
           >
-            Casos de Éxito
+            Algunos Ejemplos
+          </a>
+          <a 
+            href="#about" 
+            onClick={(e) => { e.preventDefault(); scrollToSection("about"); }}
+            className="text-gray-700 hover:text-ea-blue transition-colors text-xl py-2"
+          >
+            Nosotros
           </a>
           <a 
             href="#contact" 

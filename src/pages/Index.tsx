@@ -2,9 +2,9 @@
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import BenefitsSection from "@/components/BenefitsSection";
 import SolutionsSection from "@/components/SolutionsSection";
 import ExamplesSection from "@/components/ExamplesSection";
+import AboutUsSection from "@/components/AboutUsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -34,9 +34,9 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
       <HeroSection />
-      <BenefitsSection />
       <SolutionsSection />
       <ExamplesSection />
+      <AboutUsSection />
       <ContactSection />
       <Footer />
     </div>
