@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -90,7 +89,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-white text-foreground font-sans antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -116,7 +115,7 @@
 
 @layer components {
   .glass-card {
-    @apply bg-white/80 backdrop-blur-sm shadow-sm border border-white/20 rounded-2xl transition-all;
+    @apply bg-white/80 backdrop-blur-sm shadow-sm border border-ea-teal/10 rounded-2xl transition-all;
   }
   
   .animation-delay-500 {
@@ -132,11 +131,11 @@
   }
   
   .btn-primary {
-    @apply bg-ea-blue hover:bg-ea-darkblue text-white px-6 py-3 rounded-lg font-medium transition-all shadow-md hover:shadow-lg;
+    @apply bg-ea-teal hover:bg-ea-teal/90 text-white px-6 py-3 rounded-lg font-medium transition-all shadow-md hover:shadow-lg;
   }
   
   .section-title {
-    @apply text-3xl md:text-4xl font-bold mb-4 text-center;
+    @apply text-3xl md:text-4xl font-bold mb-4 text-center text-ea-teal;
   }
   
   .section-subtitle {
