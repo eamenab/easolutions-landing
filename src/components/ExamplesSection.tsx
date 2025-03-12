@@ -61,20 +61,25 @@ const ExamplesSection = () => {
   
   const examples = [
     {
-      title: "Banca Digital Premium",
-      description: "Implementación de una plataforma de banca digital para una institución financiera líder con funcionalidades avanzadas de seguridad.",
-      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+      title: "Base de Clientes",
+      description: "Implementación de una plataforma de Base de Clientes para hacer enrolamiento, mantener documentación, encuesta y hacer gestión de clientes",
+      image: "https://frkhjiuttlxjipkykjti.supabase.co/storage/v1/object/public/eaconsulting//Screenshot_1.png"
     },
     {
-      title: "Sistema de Gestión de Riesgos",
-      description: "Desarrollo de un sistema integral para la identificación, evaluación y mitigación de riesgos financieros en tiempo real.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+      title: "Proceso de Correos",
+      description: "Desarrollo de un proceso automático para identificar correos de clientes y clasificarlos",
+      image: "https://frkhjiuttlxjipkykjti.supabase.co/storage/v1/object/public/eaconsulting//Screenshot_2.png"
     },
     {
-      title: "Plataforma de Cumplimiento Normativo",
-      description: "Solución automatizada para el seguimiento y cumplimiento de regulaciones financieras en múltiples jurisdicciones.",
-      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-    }
+      title: "Plataforma de Reconocimiento Automático de Movimientos Bancarios",
+      description: "Integración con el banco BCI para reconocimiento automático de movimientos.",
+      image: "https://frkhjiuttlxjipkykjti.supabase.co/storage/v1/object/public/eaconsulting//Screenshot_3.png"
+    },
+    {
+      title: "Consultas de Información de Clientes con Chat",
+      description: "Consultas de información a traves de un chatbot.",
+      image: "https://frkhjiuttlxjipkykjti.supabase.co/storage/v1/object/public/eaconsulting//Screenshot_4.png"
+    },
   ];
 
   useEffect(() => {
@@ -101,7 +106,7 @@ const ExamplesSection = () => {
         <div className={`text-center mb-16 opacity-0 transform translate-y-8 transition-all duration-700 ${isVisible ? "opacity-100 transform-none" : ""}`}>
           <h2 className="section-title">Algunos Ejemplos</h2>
           <p className="section-subtitle">
-            Descubre cómo hemos ayudado a instituciones financieras a transformar sus operaciones con nuestras soluciones SaaS.
+            Estos son algunos ejemplos de soluciones que podemos implementar.
           </p>
         </div>
         

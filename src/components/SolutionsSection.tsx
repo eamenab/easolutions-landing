@@ -1,6 +1,6 @@
 
 import { useState, useEffect, useRef } from "react";
-import { CreditCard, Database, Bookmark, BarChart3 } from "lucide-react";
+import { CreditCard, Database, Bookmark, BarChart3, LucideWebhook } from "lucide-react";
 
 interface SolutionCardProps {
   icon: React.ReactNode;
@@ -58,24 +58,24 @@ const SolutionsSection = () => {
   
   const solutions = [
     {
-      icon: <CreditCard size={24} />,
-      title: "Integración Bancaria y Pagos",
-      description: "Integración perfecta con sistemas bancarios y procesadores de pagos para transacciones sin fricciones."
+      icon: <LucideWebhook size={24} />,
+      title: "Integración",
+      description: "Integración con sistemas internos y externos a través de APIs o archivos"
     },
     {
       icon: <Database size={24} />,
-      title: "Conciliación y Automatización de Datos",
+      title: "Conciliación y Automatización de Flujos de Datos",
       description: "Flujos de trabajo automatizados para la conciliación de datos, reduciendo el esfuerzo manual y las tasas de error."
     },
     {
       icon: <Bookmark size={24} />,
-      title: "Herramientas de Cumplimiento Normativo",
-      description: "Mantente en conformidad con las regulaciones financieras en evolución mediante el monitoreo y reporte automatizado."
+      title: "Mejoras de Procesos",
+      description: "Mejoras en los flujos de procesos a través de herramientas técnologicas."
     },
     {
       icon: <BarChart3 size={24} />,
-      title: "Gestión de Cartera y Riesgos",
-      description: "Herramientas avanzadas de análisis y visualización para una gestión eficaz de carteras y riesgos."
+      title: "Reportes",
+      description: "Visualización y Disponiblización de información. Estandarización para reportes normativos."
     }
   ];
 
@@ -102,9 +102,6 @@ const SolutionsSection = () => {
       <div className="container mx-auto">
         <div className={`text-center mb-16 opacity-0 transform translate-y-8 transition-all duration-700 ${isVisible ? "opacity-100 transform-none" : ""}`}>
           <h2 className="section-title">Nuestras Soluciones</h2>
-          <p className="section-subtitle">
-            Soluciones tecnológicas financieras integrales diseñadas para abordar los desafíos únicos de las instituciones financieras modernas.
-          </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

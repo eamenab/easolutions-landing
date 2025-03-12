@@ -72,7 +72,7 @@ const Navbar = () => {
               onClick={(e) => { e.preventDefault(); scrollToSection("contact"); }}
               className="btn-primary"
             >
-              Solicitar Consulta
+              Hagamos una Reunión
             </a>
           </nav>
           
@@ -121,7 +121,7 @@ const Navbar = () => {
             onClick={(e) => { e.preventDefault(); scrollToSection("contact"); }}
             className="btn-primary text-center text-xl"
           >
-            Solicitar Consulta
+            Hagamos una Reunión
           </a>
         </nav>
       </div>

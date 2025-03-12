@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-ea-blue font-bold text-2xl mb-4">EA Solutions</h3>
             <p className="text-gray-600 mb-4 max-w-md">
-              Soluciones SaaS innovadoras para instituciones financieras, diseñadas para optimizar operaciones, mejorar la seguridad e impulsar el crecimiento.
+              Potencia a las instituciones financieras con soluciones tecnológicas a medida para optimizar operaciones y mejorar el servicio al cliente.
             </p>
             <p className="text-gray-500 text-sm">
               &copy; {year} EA Solutions. Todos los derechos reservados.
@@ -54,41 +54,12 @@ const Footer = () => {
                   href="#contact" 
                   className="text-gray-600 hover:text-ea-blue transition-colors"
                 >
-                  Contáctanos
+                  Hagamos una Reunión
                 </a>
               </li>
             </ul>
           </div>
-          
-          <div>
-            <h4 className="font-bold text-gray-900 mb-4">Legal</h4>
-            <ul className="space-y-3">
-              <li>
-                <a 
-                  href="#" 
-                  className="text-gray-600 hover:text-ea-blue transition-colors"
-                >
-                  Política de Privacidad
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#" 
-                  className="text-gray-600 hover:text-ea-blue transition-colors"
-                >
-                  Términos de Servicio
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#" 
-                  className="text-gray-600 hover:text-ea-blue transition-colors"
-                >
-                  Política de Seguridad
-                </a>
-              </li>
-            </ul>
-          </div>
+
         </div>
       </div>
     </footer>

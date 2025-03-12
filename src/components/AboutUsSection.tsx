@@ -25,18 +25,22 @@ const AboutUsSection = () => {
   }, []);
 
   return (
-    <section id="about" className="section-padding bg-ea-gray" ref={sectionRef}>
+    <section id="about" className="bg-ea-gray" ref={sectionRef}>
       <div className="container mx-auto">
         <div className={`text-center mb-12 opacity-0 transform translate-y-8 transition-all duration-700 ${isVisible ? "opacity-100 transform-none" : ""}`}>
-          <h2 className="section-title">Nosotros</h2>
+          <h2 className="section-title p-8">Nosotros</h2>
         </div>
         
         <div className="max-w-4xl mx-auto">
           <div className="glass-card p-8 md:p-10 rounded-xl reveal-on-scroll">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
               <div className="flex-shrink-0">
-                <div className="size-28 md:size-32 bg-ea-blue/10 rounded-full flex items-center justify-center text-ea-blue">
-                  <User size={48} />
+                <div className="size-28 md:size-32 bg-ea-blue/10 rounded-full flex items-center justify-center overflow-hidden">
+                  <img 
+                    src="https://media.licdn.com/dms/image/v2/D4E03AQEz17CopwqiNA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1684777494934?e=1747267200&v=beta&t=CTCpB_eke96pB8ebx7UVTJU3reV1sNIjkLHkFmFekPg" 
+                    alt="User Profile" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               
