@@ -27,7 +27,7 @@ const ContactForm = () => {
     
     // Simulate form submission
     setTimeout(() => {
-      toast.success("Thank you for your message! We'll be in touch soon.");
+      toast.success("¡Gracias por tu mensaje! Nos pondremos en contacto pronto.");
       setFormData({
         name: "",
         email: "",
@@ -43,12 +43,12 @@ const ContactForm = () => {
       <div className="space-y-4">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-            Full Name
+            Nombre Completo
           </label>
           <Input
             id="name"
             name="name"
-            placeholder="John Doe"
+            placeholder="Juan Pérez"
             value={formData.name}
             onChange={handleChange}
             required
@@ -58,13 +58,13 @@ const ContactForm = () => {
         
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-            Email Address
+            Correo Electrónico
           </label>
           <Input
             id="email"
             name="email"
             type="email"
-            placeholder="john@example.com"
+            placeholder="juan@ejemplo.com"
             value={formData.email}
             onChange={handleChange}
             required
@@ -74,12 +74,12 @@ const ContactForm = () => {
         
         <div>
           <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">
-            Company
+            Empresa
           </label>
           <Input
             id="company"
             name="company"
-            placeholder="Your Company"
+            placeholder="Tu Empresa"
             value={formData.company}
             onChange={handleChange}
             required
@@ -89,12 +89,12 @@ const ContactForm = () => {
         
         <div>
           <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-            Message
+            Mensaje
           </label>
           <Textarea
             id="message"
             name="message"
-            placeholder="How can we help your financial institution?"
+            placeholder="¿Cómo podemos ayudar a tu institución financiera?"
             value={formData.message}
             onChange={handleChange}
             rows={4}
@@ -108,9 +108,9 @@ const ContactForm = () => {
         disabled={isSubmitting}
         className="w-full bg-ea-blue hover:bg-ea-darkblue text-white font-medium py-3 rounded-lg transition-all flex items-center justify-center"
       >
-        {isSubmitting ? "Sending..." : (
+        {isSubmitting ? "Enviando..." : (
           <>
-            Submit <Send size={16} className="ml-2" />
+            Enviar <Send size={16} className="ml-2" />
           </>
         )}
       </Button>

@@ -72,31 +72,31 @@ const BenefitsSection = () => {
     <section id="benefits" className="section-padding bg-ea-gray" ref={sectionRef}>
       <div className="container mx-auto">
         <div className={`text-center mb-16 opacity-0 transform translate-y-8 transition-all duration-700 ${isVisible ? "opacity-100 transform-none" : ""}`}>
-          <h2 className="section-title">Why Choose Us?</h2>
+          <h2 className="section-title">¿Por Qué Elegirnos?</h2>
           <p className="section-subtitle">
-            Partner with EA Solutions to transform your financial institution with technology built for the future.
+            Asociarse con EA Solutions para transformar su institución financiera con tecnología construida para el futuro.
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <BenefitCard
             icon={<Code size={32} />}
-            title="Custom Development"
-            description="Tailored solutions designed specifically to meet your unique business needs and workflows."
+            title="Desarrollo Personalizado"
+            description="Soluciones a medida diseñadas específicamente para satisfacer sus necesidades comerciales y flujos de trabajo únicos."
             delay=""
           />
           
           <BenefitCard
             icon={<ShieldCheck size={32} />}
-            title="Security & Compliance"
-            description="Industry-leading standards for financial data protection and regulatory compliance."
+            title="Seguridad y Cumplimiento"
+            description="Estándares líderes en la industria para la protección de datos financieros y el cumplimiento normativo."
             delay="animation-delay-500"
           />
           
           <BenefitCard
             icon={<LineChart size={32} />}
-            title="Scalability & Performance"
-            description="High-performance software architecture that grows seamlessly with your business."
+            title="Escalabilidad y Rendimiento"
+            description="Arquitectura de software de alto rendimiento que crece sin problemas con su negocio."
             delay="animation-delay-1000"
           />
         </div>

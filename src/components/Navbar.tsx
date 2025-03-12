@@ -51,21 +51,28 @@ const Navbar = () => {
               onClick={(e) => { e.preventDefault(); scrollToSection("benefits"); }}
               className="text-gray-700 hover:text-ea-blue transition-colors"
             >
-              Why Choose Us
+              ¿Por Qué Elegirnos?
             </a>
             <a 
               href="#solutions" 
               onClick={(e) => { e.preventDefault(); scrollToSection("solutions"); }}
               className="text-gray-700 hover:text-ea-blue transition-colors"
             >
-              Our Solutions
+              Nuestras Soluciones
+            </a>
+            <a 
+              href="#examples" 
+              onClick={(e) => { e.preventDefault(); scrollToSection("examples"); }}
+              className="text-gray-700 hover:text-ea-blue transition-colors"
+            >
+              Casos de Éxito
             </a>
             <a 
               href="#contact" 
               onClick={(e) => { e.preventDefault(); scrollToSection("contact"); }}
               className="btn-primary"
             >
-              Schedule a Consultation
+              Solicitar Consulta
             </a>
           </nav>
           
@@ -93,21 +100,28 @@ const Navbar = () => {
             onClick={(e) => { e.preventDefault(); scrollToSection("benefits"); }}
             className="text-gray-700 hover:text-ea-blue transition-colors text-xl py-2"
           >
-            Why Choose Us
+            ¿Por Qué Elegirnos?
           </a>
           <a 
             href="#solutions" 
             onClick={(e) => { e.preventDefault(); scrollToSection("solutions"); }}
             className="text-gray-700 hover:text-ea-blue transition-colors text-xl py-2"
           >
-            Our Solutions
+            Nuestras Soluciones
+          </a>
+          <a 
+            href="#examples" 
+            onClick={(e) => { e.preventDefault(); scrollToSection("examples"); }}
+            className="text-gray-700 hover:text-ea-blue transition-colors text-xl py-2"
+          >
+            Casos de Éxito
           </a>
           <a 
             href="#contact" 
             onClick={(e) => { e.preventDefault(); scrollToSection("contact"); }}
             className="btn-primary text-center text-xl"
           >
-            Schedule a Consultation
+            Solicitar Consulta
           </a>
         </nav>
       </div>

@@ -56,10 +56,10 @@ const HeroSection = () => {
               className="reveal-on-scroll"
             >
               <span className="inline-block bg-ea-blue/10 text-ea-blue px-4 py-1 rounded-full text-sm font-medium mb-4">
-                Financial SaaS Development
+                Desarrollo SaaS para Finanzas
               </span>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-gray-900">
-                Innovative SaaS Solutions for Financial Institutions
+                Soluciones SaaS Innovadoras para Instituciones Financieras
               </h1>
             </div>
             
@@ -67,7 +67,7 @@ const HeroSection = () => {
               ref={(el) => (elementsRef.current[1] = el)} 
               className="text-xl text-gray-600 max-w-xl reveal-on-scroll animation-delay-500"
             >
-              EA Solutions empowers financial institutions with tailored technology solutions to streamline operations, enhance security, and drive growth.
+              EA Solutions potencia a las instituciones financieras con soluciones tecnológicas a medida para optimizar operaciones, mejorar la seguridad y impulsar el crecimiento.
             </p>
             
             <div 
@@ -78,7 +78,7 @@ const HeroSection = () => {
                 onClick={scrollToContact} 
                 className="btn-primary flex items-center group"
               >
-                Schedule a Consultation
+                Solicitar una Consulta
                 <ArrowRight className="ml-2 transition-transform group-hover:translate-x-1" size={18} />
               </button>
             </div>
@@ -98,9 +98,9 @@ const HeroSection = () => {
                       </div>
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4">Secure & Scalable</h3>
+                  <h3 className="text-2xl font-bold mb-4">Seguro y Escalable</h3>
                   <p className="text-white/80">
-                    Our SaaS solutions are built with enterprise-grade security and scalability from the ground up.
+                    Nuestras soluciones SaaS se construyen con seguridad y escalabilidad de nivel empresarial desde el principio.
                   </p>
                 </div>
               </div>
