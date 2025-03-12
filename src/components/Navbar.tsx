@@ -1,0 +1,118 @@
+
+import { useState, useEffect } from "react";
+import { cn } from "@/lib/utils";
+import { Menu, X } from "lucide-react";
+
+const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop - 80,
+        behavior: "smooth"
+      });
+      setMobileMenuOpen(false);
+    }
+  };
+
+  return (
+    <header 
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent"
+      )}
+    >
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="flex items-center justify-between h-20">
+          <a 
+            href="#" 
+            className="text-ea-blue font-bold text-2xl flex items-center"
+            onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+          >
+            EA Solutions
+          </a>
+          
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            <a 
+              href="#benefits" 
+              onClick={(e) => { e.preventDefault(); scrollToSection("benefits"); }}
+              className="text-gray-700 hover:text-ea-blue transition-colors"
+            >
+              Why Choose Us
+            </a>
+            <a 
+              href="#solutions" 
+              onClick={(e) => { e.preventDefault(); scrollToSection("solutions"); }}
+              className="text-gray-700 hover:text-ea-blue transition-colors"
+            >
+              Our Solutions
+            </a>
+            <a 
+              href="#contact" 
+              onClick={(e) => { e.preventDefault(); scrollToSection("contact"); }}
+              className="btn-primary"
+            >
+              Schedule a Consultation
+            </a>
+          </nav>
+          
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-gray-700"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+      </div>
+      
+      {/* Mobile Menu */}
+      <div
+        className={cn(
+          "md:hidden fixed inset-0 top-20 bg-white z-40 transition-all duration-300 ease-in-out transform",
+          mobileMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"
+        )}
+      >
+        <nav className="flex flex-col space-y-6 p-6">
+          <a 
+            href="#benefits" 
+            onClick={(e) => { e.preventDefault(); scrollToSection("benefits"); }}
+            className="text-gray-700 hover:text-ea-blue transition-colors text-xl py-2"
+          >
+            Why Choose Us
+          </a>
+          <a 
+            href="#solutions" 
+            onClick={(e) => { e.preventDefault(); scrollToSection("solutions"); }}
+            className="text-gray-700 hover:text-ea-blue transition-colors text-xl py-2"
+          >
+            Our Solutions
+          </a>
+          <a 
+            href="#contact" 
+            onClick={(e) => { e.preventDefault(); scrollToSection("contact"); }}
+            className="btn-primary text-center text-xl"
+          >
+            Schedule a Consultation
+          </a>
+        </nav>
+      </div>
+    </header>
+  );
+};
+
+export default Navbar;
