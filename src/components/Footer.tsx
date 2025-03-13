@@ -21,45 +21,6 @@ const Footer = () => {
               &copy; {year} EA Solutions. Todos los derechos reservados.
             </p>
           </div>
-          
-          <div>
-            <h4 className="font-bold text-gray-900 mb-4">Enlaces Rápidos</h4>
-            <ul className="space-y-3">
-              <li>
-                <a 
-                  href="#solutions" 
-                  className="text-gray-600 hover:text-ea-blue transition-colors"
-                >
-                  Nuestras Soluciones
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#examples" 
-                  className="text-gray-600 hover:text-ea-blue transition-colors"
-                >
-                  Algunos Ejemplos
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#about" 
-                  className="text-gray-600 hover:text-ea-blue transition-colors"
-                >
-                  Nosotros
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#contact" 
-                  className="text-gray-600 hover:text-ea-blue transition-colors"
-                >
-                  Hagamos una Reunión
-                </a>
-              </li>
-            </ul>
-          </div>
-
         </div>
       </div>
     </footer>
