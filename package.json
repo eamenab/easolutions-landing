@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://eamenab.github.io/easolutions-landing/",
+  "homepage": "https://easolutions.cl/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
