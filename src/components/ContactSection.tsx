@@ -70,6 +70,15 @@ const ContactSection = () => {
                       </div>
                     </div>
                   ))}
+                  {/* Calendly Embed */}
+                  <div className="mt-8 w-full">
+                    <iframe 
+                      src="https://calendly.com/ernestoamenabar?hide_landing_page_details=1&text_color=003333&primary_color=003333"
+                      width="100%" 
+                      height="1100" 
+                      allowFullScreen
+                    />
+                  </div>
                 </div>
               </div>
             </div>
