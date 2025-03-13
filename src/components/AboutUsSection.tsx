@@ -37,7 +37,7 @@ const AboutUsSection = () => {
               <div className="flex-shrink-0">
                 <div className="size-28 md:size-32 bg-ea-blue/10 rounded-full flex items-center justify-center overflow-hidden">
                   <img 
-                    src="https://media.licdn.com/dms/image/v2/D4E03AQEz17CopwqiNA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1684777494934?e=1747267200&v=beta&t=CTCpB_eke96pB8ebx7UVTJU3reV1sNIjkLHkFmFekPg" 
+                    src={`${import.meta.env.BASE_URL}1684777494934.jpg`}  
                     alt="User Profile" 
                     className="w-full h-full object-cover"
                   />

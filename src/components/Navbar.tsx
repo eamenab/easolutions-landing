@@ -38,10 +38,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           <a 
             href="#" 
-            className="text-ea-blue font-bold text-2xl flex items-center"
+            className="text-ea-blue font-bold text-2xl flex items-center gap-4"
             onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
           >
+            
             EA Solutions
+            <img src={`${import.meta.env.BASE_URL}logo1_1.png`} className="h-8 w-auto" />
           </a>
           
           {/* Desktop Navigation */}
