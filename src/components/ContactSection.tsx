@@ -29,8 +29,8 @@ const ContactSection = () => {
     {
       icon: <Mail size={20} />,
       title: "Email",
-      content: "ernestoamenabar@gmail.com",
-      link: "mailto:ernestoamenabar@gmail.com"
+      content: "ernestoamenabar@easolutions.cl",
+      link: "mailto:ernestoamenabar@easolutions.cl"
     },
   ];
 
