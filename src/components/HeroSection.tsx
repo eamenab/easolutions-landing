@@ -36,7 +36,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="pt-16 min-h-[80vh] flex items-center relative overflow-hidden">
+    <section className="pt-16 min-h-[80vh] flex items-center relative overflow-hidden animated-bg">
       {/* Container to Align Everything */}
       <div className="container mx-auto px-4 md:px-6">
         {/* Banner Image */}

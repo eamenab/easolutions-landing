@@ -101,14 +101,14 @@ const ExamplesSection = () => {
   }, []);
 
   return (
-    <section id="examples" className="section-padding" ref={sectionRef}>
+    <section id="examples" ref={sectionRef}>
       <div className="container mx-auto">
-        <div className={`text-center mb-16 opacity-0 transform translate-y-8 transition-all duration-700 ${isVisible ? "opacity-100 transform-none" : ""}`}>
+{/*         <div className={`text-center mb-16 opacity-0 transform translate-y-8 transition-all duration-700 ${isVisible ? "opacity-100 transform-none" : ""}`}>
           <h2 className="section-title">Algunos Ejemplos</h2>
           <p className="section-subtitle">
             Estos son algunos ejemplos de soluciones que podemos implementar.
           </p>
-        </div>
+        </div> */}
         
         <div className="flex flex-col space-y-8 max-w-3xl mx-auto">
           {examples.map((example, index) => (

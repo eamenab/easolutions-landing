@@ -57,7 +57,7 @@ const Navbar = () => {
             </a>
             <a 
               href="#examples" 
-              onClick={(e) => { e.preventDefault(); scrollToSection("examples"); }}
+              onClick={(e) => { e.preventDefault(); scrollToSection("chat"); }}
               className="text-gray-700 hover:text-ea-blue transition-colors"
             >
               Algunos Ejemplos

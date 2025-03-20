@@ -1,0 +1,21 @@
+/* Override font sizes */
+:root {
+    --chat--message--font-size: 0.2rem;
+    --chat--heading--font-size: 1rem; 
+    --chat--subtitle--font-size: 0.5rem;
+  }
+  
+  /* Ensure message text is smaller */
+  .chat-message {
+    font-size: 0.875rem; 
+  }
+  
+  /* Ensure the header text is smaller */
+  .chat-header h1 {
+    font-size: 1rem;
+  }
+  
+  .chat-header p {
+    font-size: 1rem;
+  }
+  
